@@ -3,6 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+print('dit is een test')
+
 #read file and rename the columns
 df = pd.read_csv('NL_new_data_GW.csv', sep=',')
 df.rename(columns = {'observedPropertyDeterminandLabel':'pollutant', 'resultObservedValue':'concentration' , 'resultUom':'unit', 'phenomenonTimeSamplingDate_year':'year'}, inplace = True)
